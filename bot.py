@@ -17,9 +17,12 @@ msg = [
     "####<%d,%d>####[%d]",
     "########<%d,%d>[%d]",
 ]
-for i in range(50):
+
+total = random.randint(30, 50)
+for _ in range(total):
     res = requests.post(url, json=data, headers=headers)
     # print(res.status_code, res.json())
+    assert res.status_code == 200
     block = random.randint(1, 3)
     time.sleep(block)
     cnt += 1
