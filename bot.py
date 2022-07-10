@@ -17,7 +17,6 @@ msg = [
     "####<%d,%d>####[%d]",
     "########<%d,%d>[%d]",
 ]
-
 total = random.randint(30, 50)
 for _ in range(total):
     res = requests.post(url, json=data, headers=headers)
