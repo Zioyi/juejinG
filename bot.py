@@ -4,7 +4,7 @@ import random
 
 url = "https://api.juejin.cn/content_api/v1/article/detail"
 data = {
-    "article_id": "7113470585883066404"
+    "article_id": "7123405032782823432"
 }
 
 headers = {
